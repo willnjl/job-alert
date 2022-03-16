@@ -9,6 +9,7 @@
  * License: GPL2
  */
 
+use App\JobAlert;
 
 // If this file is called directly, abort.
 if (!defined('ABSPATH')) {
@@ -21,17 +22,17 @@ require __DIR__ . '/vendor/autoload.php';
 /**
  * The code that runs during plugin activation.
  */
-function activate_fifteenten_recruitment()
+function activate_fifteenten_job_alert()
 {
 }
 
 
-function deactivate_fifteenten_recruitment()
+function deactivate_fifteenten_job_alert()
 {
 }
 
-register_activation_hook(__FILE__, 'activate_fifteenten_recruitment');
-register_deactivation_hook(__FILE__, 'deactivate_fifteenten_recruitment');
+register_activation_hook(__FILE__, 'activate_fifteenten_job_alert');
+register_deactivation_hook(__FILE__, 'deactivate_fifteenten_job_alert');
 
 class FifteentenJobAlert_Plugin
 {
@@ -42,6 +43,8 @@ class FifteentenJobAlert_Plugin
     {
         $this->define('_FIFTEENTEN_JOB_ALERT_VERSION_', $this->version);
         $this->define('_FIFTEENTEN_JOB_ALERT_PLUGIN_PATH_', plugin_dir_url(__FILE__));
+
+        $this->jobAlert = new JobAlert('lol');
     }
 
 

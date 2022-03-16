@@ -4,7 +4,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Fifteenten\\FifteentenJobAlert\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
