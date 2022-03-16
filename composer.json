@@ -1,0 +1,17 @@
+{
+    "name": "fifteenten/fifteenten-job-alert",
+    "description": "A wordpress plugin for alerting subscribers when a job gets live",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Fifteenten\\FifteentenJobAlert\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Will Leighton",
+            "email": "will@fifteenten.co.uk"
+        }
+    ],
+    "require": {}
+}
